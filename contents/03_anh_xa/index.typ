@@ -12,5 +12,6 @@
     - Giá bán của mỗi sản phẩm trong đơn hàng không được vượt quá  giá gốc ban đầu. (Giá bán <= giá gốc).
     - Số lượng ưu đãi loại vốn có của mỗi khách hàng phải nhỏ hơn hoặc bằng (<=) số lượng ưu đãi vốn có đó trên toàn bộ hệ thống.
     - Số lượng của mỗi loại ưu đãi có thể áp dụng lên đơn hàng không được vượt quá số lượng tối đa của loại ưu đãi đó.
+    - Ngày áp dụng ưu đãi cho đơn hàng phải trước ngày hết hạn của đơn hàng đó.
 ]
 #pagebreak()
