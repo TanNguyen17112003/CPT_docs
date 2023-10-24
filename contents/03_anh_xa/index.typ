@@ -1,5 +1,5 @@
 = Lược đồ dữ liệu quan hệ
-
+#link("https://drive.google.com/file/d/1BuYR_B0M1-4z6Km5FnIodlum8anUIiC_/view?usp=sharing")
 #figure(caption: [Lược đồ dữ liệu quan hệ],
     image("../../components/assets/mapping.png")
 )
