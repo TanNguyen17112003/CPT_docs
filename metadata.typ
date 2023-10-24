@@ -1,17 +1,15 @@
 #let meta = (
-  course-name: "Đồ án tổng hợp - hướng Công nghệ phần mềm",
-  course-id: "CO3103",
-  title: "Phát triển hệ thống in ấn 3D",
+  course-name: "Hệ cơ sở dữ liệu (Thí Nghiệm)",
+  course-id: "CO2014",
+  title: "Shop online kinh doanh đồ lưu niệm",
   semester: 231,
   date: "09/2023",
   students: (
-    "2110193": "Đỗ Nguyễn An Huy",
-    "2110342": "Nguyễn Minh Lộc",
-    "2114417": "Nguyễn Ngọc Phú",
-    "2112122": "Nguyễn Hồng Quân",
+    "2113080": "Trương Đức Dũng",
+    "2114270": "Nguyễn Thành Nhân",
+    "2110516": "Võ Tấn Tài",
     "2110527": "Nguyễn Hoàng Duy Tân",
-    "2112336": "Phạm Đức Thắng",
     "2112594": "Trần Nguyễn Minh Tuệ"
   ),
-  advisor: "ThS. Mai Đức Trung",
+  advisor: "ThS. Trần Thị Quế Nguyệt",
 )

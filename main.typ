@@ -2,8 +2,8 @@
 #set document(title: meta.title, author: meta.students.values())
 #set page(
   paper: "a4",
-  header: { include "templates/header.typ" },
-  footer: { include "templates/footer.typ" },
+  header: { include "components/header.typ" },
+  footer: { include "components/footer.typ" },
   margin: (
     top: 30mm,
     bottom: 20mm,
@@ -24,7 +24,7 @@
 #set figure(gap: 1em)
 #show heading: it => block(inset: (top: 1em, bottom: .5em), it)
 
-#include "templates/cover.typ"
+#include "components/cover.typ"
 
 #pagebreak()
 

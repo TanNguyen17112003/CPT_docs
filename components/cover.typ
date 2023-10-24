@@ -14,7 +14,7 @@
     )
   },
   1.5cm,
-  align(center, image("hcmut.png", height: 3cm)),
+  align(center, image("assets/hcmut.png", height: 3cm)),
   1.5cm,
   stack(
     dir: ttb,
