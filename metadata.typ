@@ -1,15 +1,13 @@
 #let meta = (
-  course-name: "Hệ cơ sở dữ liệu (Thí Nghiệm)",
-  course-id: "CO2014",
-  title: "Shop online kinh doanh đồ lưu niệm",
+  course-name: "Mạng máy tính",
+  course-id: "CO3094",
+  title: "NETWORK DESIGN AND SIMULATION FOR A CRITICAL LARGE COMPANY",
   semester: 231,
-  date: "09/2023",
+  date: "11/2023",
   students: (
-    "2113080": "Trương Đức Dũng",
-    "2114270": "Nguyễn Thành Nhân",
-    "2110516": "Võ Tấn Tài",
     "2110527": "Nguyễn Hoàng Duy Tân",
-    "2112594": "Trần Nguyễn Minh Tuệ"
+    "2112594": "Trần Nguyễn Minh Tuệ",
+    "2110342": "Nguyễn Minh Lộc"
   ),
-  advisor: "ThS. Trần Thị Quế Nguyệt",
+  advisor: "Nguyễn Phương Duy",
 )

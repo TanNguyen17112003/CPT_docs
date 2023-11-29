@@ -14,7 +14,7 @@
 
   stack(
     dir: ltr,
-    image("assets/hcmut.png", height: 2.5em),
+    image("./assets/hcmut.jpg", height: 2.5em),
     0.5cm,
     align(
       horizon,
