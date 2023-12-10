@@ -1,1 +1,0 @@
-= Mô hình CPT xây dựng cho hệ thống
