@@ -352,30 +352,89 @@ Các bước thực hiện
     8. Định tuyến các Router
     9. Thực hiện kiểm thử
 ]
-// #figure(caption: [Dây cáp mạng Cat5e],
-//             image("../../components/assets/capquang.png", fit: "contain" ))
-//        
+*Sơ đồ mô phỏng hệ thống mạng của toàn bộ hệ thống*
+#figure(caption: [ Sơ đồ mô phỏng hệ thống mạng của toàn bộ hệ thống],
+            image("../../components/assets/sodomain.png"))
+       
+*Sơ đồ mô phỏng hệ thống mạng của trụ sở chính TP.HCM*
+#figure(caption: [Sơ đồ luận lý thiết kế mạng trụ sở chính],
+            image("../../components/assets/trusochinh.png" )
+        )
+       
+*Sơ đồ mô phỏng hệ thống mạng của chi nhánh Hà Nội*
+#figure(caption: [Sơ đồ luận lý thiết kế mạng chi nhánh Hà Nội],
+            image("../../components/assets/chinhanhHaNoi.png")
+        )
 
-// #figure(caption: [Dây cáp mạng Cat5e],
-//             image("../../components/assets/capquang.png", fit: "contain" )
-//         )
-
-// #figure(caption: [Dây cáp mạng Cat5e],
-//             image("../../components/assets/capquang.png", fit: "contain" )
-//         )
+*Sơ đồ mô phỏng hệ thống mạng của chi nhánh Đà Nẵng*
+#figure(caption: [Sơ đồ luận lý thiết kế mạng chi nhánh Đà Nẵng],
+            image("../../components/assets/chinhanhDN.png")
+        )
 
 #pagebreak()
 = Kiểm thử kiến trúc mạng
 == Kiểm tra bằng lệnh ping
 === Trong cùng một VLAN
-Ping từ PC-0 có địa chỉ IP 192.168.1.3 đến PC-1 có địa chỉ IP 192.168.1.2 trong cùng VLAN 10:
-// #figure(caption: [Dây cáp mạng Cat5e],
-//             image("../../components/assets/capquang.png", fit: "contain" )
-//         )
+Ping từ PC-1 có địa chỉ IP 192.168.2.4 đến PC-3 có địa chỉ IP 192.168.2.2 trong cùng VLAN 20:
+#figure(caption: [Ping trong cùng VLAN ITROOM],
+            image("../../components/assets/pingVLAN.png")
+        )
 === Giữa hai VLAN khác nhau trong cùng một chi nhánh
-Ping từ PC-0 có địa chỉ IP 192.168.1.3 trong VLAN 10 đến PC-7 có địa chỉ IP 192.168.4.4 trong VLAN 40:
-// #figure(caption: [Dây cáp mạng Cat5e],
-//             image("../../components/assets/capquang.png", fit: "contain" )
-//         )
-=== Giữa một thiết bị ở chi nhánh này với thiết bị ở chi nhánh khác
+Ping từ PC-1 có địa chỉ IP 192.168.2.4 trong VLAN 20 đến RM PC-2 có địa chỉ IP 192.168.7.2 trong VLAN 70:
+#figure(caption: [Ping hai VLAN khác nhau ITROOM đến RM],
+            image("../../components/assets/VLAN ChiNhanh.png")
+        )
 
+
+=== Giữa VLAN và Server trong cùng một chi nhánh      
+Ping từ FINACE PC-1 có địa chỉ IP 192.168.5.3 trong VLAN 50 đến Mail Server có địa chỉ IP 100.0.0.4:
+#figure(caption: [Ping VLAN và Server trong cùng một chi nhánh],
+            image("../../components/assets/VLAN Server.png")
+        )
+
+=== Giữa một thiết bị ở chi nhánh này với thiết bị ở chi nhánh khác
+Ping từ PC-1 có địa chỉ IP 192.168.2.4 của phòng IT trụ sở chính đến PC-1 có địa chỉ IP 192.169.2.2 của phòng IT chi nhánh Đà Nẵng:
+#figure(caption: [Ping giữa hai chi nhánh],
+            image("../../components/assets/pingChiNhanh.png")
+        )
+
+=== Kiểm tra kết nối internet
+
+Ping từ HR PC-1 với địa chỉ IP 192.168.4.4 tới địa chỉ của Google.com với địa chỉ 11.11.11.1 thông qua
+mạng internet:
+#figure(caption: [Ping kiểm tra kết nối internet],
+            image("../../components/assets/pingInternet.png")
+        )
+#pagebreak()
+== Kiểm tra bằng cách gửi một packet PDU thông qua giao thức ICMP
+
+
+
+
+
+
+#pagebreak()
+== Kiểm tra bằng lệnh tracert
+=== Trong cùng một VLAN
+#figure(caption: [Tracert trong cùng VLAN],
+            image("../../components/assets/tracertVLAN.png")
+        )
+=== Giữa hai VLAN khác nhau trong cùng một chi nhánh
+#figure(caption: [Tracert hai VLAN khác nhau ITROOM đến RM],
+            image("../../components/assets/tracertChiNhanh.png")
+        )
+
+=== Giữa VLAN và Server trong cùng một chi nhánh
+#figure(caption: [Tracert VLAN và Server trong cùng một chi nhánh],
+            image("../../components/assets/tracertVLANServer.png")
+        )
+
+===  Giữa một thiết bị ở chi nhánh này với thiết bị ở chi nhánh khác
+#figure(caption: [Tracert giữa hai chi nhánh],
+            image("../../components/assets/tracertChiNhanh_.png")
+        )
+
+=== Kiểm tra kết nối internet
+#figure(caption: [Tracert kiểm tra kết nối internet],
+            image("../../components/assets/tracertInternet.png")
+        )
