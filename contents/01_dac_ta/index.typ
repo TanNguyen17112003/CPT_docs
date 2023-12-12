@@ -425,7 +425,7 @@ mạng internet:
 
 ===  Giữa một thiết bị ở chi nhánh này với thiết bị ở chi nhánh khác
 #figure(caption: [Gửi một packet PDU giữa hai chi nhánh],
-            image("../../components/assets/icmp2vlan.png")
+            image("../../components/assets/icmpCN.png")
         )
 
 === Kiểm tra kết nối internet
