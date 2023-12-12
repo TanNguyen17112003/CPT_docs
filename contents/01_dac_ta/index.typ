@@ -152,7 +152,7 @@ Kết nối trụ sở chính với hai chi nhánh thông qua hai leased line v�
         Là nơi đặt 20 workstations còn lại kết nối với Switch 24 ports.
     ]
 ]
-
+#pagebreak()
 = Danh sách các thiết bị mạng được sử dụng
 == Router
 === WRT300N
@@ -408,7 +408,30 @@ mạng internet:
         )
 #pagebreak()
 == Kiểm tra bằng cách gửi một packet PDU thông qua giao thức ICMP
+=== Trong cùng một VLAN
+#figure(caption: [Gửi một packet PDU trong cùng VLAN],
+            image("../../components/assets/icmpvlan.png")
+        )
 
+=== Giữa hai VLAN khác nhau trong cùng một chi nhánh
+#figure(caption: [Gửi một packet PDU hai VLAN khác nhau ITROOM đến RM],
+            image("../../components/assets/icmp2vlan.png")
+        )
+
+=== Giữa VLAN và Server trong cùng một chi nhánh
+#figure(caption: [Gửi một packet PDU VLAN và Server trong cùng một chi nhánh],
+            image("../../components/assets/icmpserver.png")
+        )
+
+===  Giữa một thiết bị ở chi nhánh này với thiết bị ở chi nhánh khác
+#figure(caption: [Gửi một packet PDU giữa hai chi nhánh],
+            image("../../components/assets/icmp2vlan.png")
+        )
+
+=== Kiểm tra kết nối internet
+#figure(caption: [Gửi một packet PDU kiểm tra kết nối internet],
+            image("../../components/assets/icmpInternet.png")
+        )
 
 
 
