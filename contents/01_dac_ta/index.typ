@@ -439,3 +439,5 @@ mạng internet:
 #figure(caption: [Tracert kiểm tra kết nối internet],
             image("../../components/assets/tracertInternet.png")
         )
+
+#pagebreak()
